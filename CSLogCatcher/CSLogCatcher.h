@@ -101,7 +101,8 @@
 +(id)sharedCatcher;
 
 
-@property NSMutableArray *logs;
+@property (atomic, strong) NSMutableArray *logs;
+
 @end
 
 void addLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
